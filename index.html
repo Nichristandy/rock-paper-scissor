@@ -4,9 +4,48 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script src="script.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
     </head>
     <body>
+        <h1>ROCK PAPER SCISSORS</h1>
+        <div class="scores">
+            <p id="humanScore">your score : 0</p>
+            <p id="computerScore">computer score: 0</p>
+        </div>
+        <div class="battleground">
+            <div class="container">
+                <p>you</p>
+                <div id="playerChoice" class="choice-container">
+                    <p>rock</p>
+                </div>
 
+            </div>
+            <p>vs</p>
+            <div class="container">
+                <p>computer</p>
+                <div id="computerChoice" class="choice-container">
+                    <p>scissors</p>
+                </div>
+
+            </div>
+        </div>
+        <button id="start">start the game</button>
+        <div class="choices">
+            <button class="small-container" id="rock">
+                <p>rock</p>
+            </button>
+            <button class="small-container" id="paper">
+                <p>paper</p>
+            </button>
+            <button class="small-container" id="scissors">
+                <p>scissor</p>
+            </button>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
