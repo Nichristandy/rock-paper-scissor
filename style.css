@@ -1,0 +1,138 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive; /* Pixel art-style font */
+}
+
+/* Body Styling */
+body {
+  background-color: #f9f3d2; /* Light pastel yellow */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  background-image: url("path/to/your/pixel-art-background.png"); /* Optional: Add a pixel art background */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Title styling */
+h1 {
+  font-size: 2rem;
+  color: #565656;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #ffb3b3; /* Adds a slight pixelated shadow effect */
+}
+
+/* Scores styling */
+.scores p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #5c5c5c;
+}
+
+/* Battleground styling */
+.battleground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.choices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.choice-container {
+  width: 250px;
+  height: 250px;
+  background-color: #ffe5e5; /* Pastel pink */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #ff9999; /* Pixel-style border */
+  margin: 0 20px;
+  box-shadow: 3px 3px 0 #ffb3b3; /* Pixel-style shadow */
+  border-radius: 10px;
+}
+
+.choice-container p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Versus text */
+.battleground p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff9999;
+}
+
+/* Button styling */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  background-color: #b3d9ff; /* Pastel blue */
+  color: #333;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0 #99ccff; /* Pixel-style shadow */
+  margin: 10px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #99ccff;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Small containers for rock/paper/scissors */
+.small-container {
+  width: 150px;
+  height: 150px;
+  background-color: #d6ffb3; /* Pastel green */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #b3e6a3; /* Pixel-style border */
+  box-shadow: 3px 3px 0 #b3e6a3; /* Pixel-style shadow */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.small-container p {
+  font-size: 0.85rem;
+}
+
+/* Start button */
+#start {
+  background-color: #ffcc99; /* Pastel orange */
+  box-shadow: 3px 3px 0 #ffb366;
+  border-radius: 12px;
+}
+
+#start:hover {
+  background-color: #ffb366;
+}
